@@ -1,6 +1,7 @@
 class Rackd < Formula
   desc "Rackd: A device management tool"
   homepage "https://github.com/martinsuchenak/rackd"
+  license "MIT"
   version "v1.2.3"
 
   if OS.mac? && Hardware::CPU.intel?
