@@ -1,8 +1,8 @@
 class Rackd < Formula
   desc "Device management tool"
   homepage "https://github.com/martinsuchenak/rackd"
-  license "MIT"
   version "1.2.3"
+  license "MIT"  
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/martinsuchenak/rackd/releases/download/v1.2.3/rackd_Darwin_x86_64.tar.gz"
