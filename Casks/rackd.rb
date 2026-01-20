@@ -3,7 +3,7 @@ cask "rackd" do
   name "rackd"
   desc "Device management tool"
   homepage "https://github.com/martinsuchenak/rackd"
-  version "1.2.4"
+  version "1.2.5"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "rackd" do
   on_macos do
     on_intel do
       url "https://github.com/martinsuchenak/rackd/releases/download/v#{version}/rackd_Darwin_x86_64.tar.gz"
-      sha256 "a61f8901657240e6ae56324237ff01dbb1cb7e6182d50480ab8b3a6b4281e8fe"
+      sha256 "59344680bec00f7c860298b016dbc9a9a5fad0b85ae592cd0bb0db45dcc2f90e"
     end
     on_arm do
       url "https://github.com/martinsuchenak/rackd/releases/download/v#{version}/rackd_Darwin_arm64.tar.gz"
-      sha256 "d49f1435cc50b137458faadd827aacff15c657561375f2bd73c412c673b2fcf5"
+      sha256 "965463f7ad32172b7d114e3276b249e4097e67aafd230ba39b82e0e3e39e6dcd"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/martinsuchenak/rackd/releases/download/v#{version}/rackd_Linux_x86_64.tar.gz"
-      sha256 "c619abd9999bd18a27def63fea6bbbf2b6df1ecb5dee8e10113af962eea3874e"
+      sha256 "17f7d521f2b4aa48f5e692b26076513e768cc39027a0e7eec04a89db90425dea"
     end
     on_arm do
       url "https://github.com/martinsuchenak/rackd/releases/download/v#{version}/rackd_Linux_arm64.tar.gz"
-      sha256 "9bb1f9b9db7f2995a528d74ef4f768d46e7bfda4cc32ff6c599575d48ab2fc21"
+      sha256 "11130d3430a1e838a9ca730345ee02b737287aab5165f83928e7104072408e2b"
     end
   end
 
