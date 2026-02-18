@@ -1,6 +1,6 @@
-# Homebrew Tap for Rackd
+# Homebrew Tap
 
-This is a custom Homebrew tap for [Rackd](https://github.com/martinsuchenak/rackd).
+A custom Homebrew tap for my projects.
 
 ## Installation
 
@@ -10,8 +10,20 @@ This is a custom Homebrew tap for [Rackd](https://github.com/martinsuchenak/rack
 brew tap martinsuchenak/tap
 ```
 
-### 2. Install Rackd
+### 2. Install packages
+
+#### Rackd
+
+[Device management tool](https://github.com/martinsuchenak/rackd)
 
 ```bash
-brew install rackd
+brew install --cask rackd
+```
+
+#### Phantom
+
+[CLI tool for managing overlay filesystems for parallel AI agent development](https://github.com/martinsuchenak/phantom)
+
+```bash
+brew install --cask phantom
 ```
