@@ -5,21 +5,21 @@
 class Phantom < Formula
   desc "CLI tool for managing overlay filesystems for parallel AI agent development"
   homepage "https://github.com/martinsuchenak/phantom"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/martinsuchenak/phantom/releases/download/v0.0.2/phantom_0.0.2_darwin_amd64.tar.gz"
-      sha256 "ffa62b817e6e00aff0828cdd25a7dfb04cfefe0d7aa0f1652d681687d3e13e45"
+      url "https://github.com/martinsuchenak/phantom/releases/download/v0.0.3/phantom_0.0.3_darwin_amd64.tar.gz"
+      sha256 "4ab5d2aca1b0e101f7c5e4519c2215c3c99a323e624abe545885ed0f419b35a1"
 
       def install
         bin.install "phantom"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/martinsuchenak/phantom/releases/download/v0.0.2/phantom_0.0.2_darwin_arm64.tar.gz"
-      sha256 "b1fda9dbe0135769169e2ff04dc17926c929d0dd1ba0661e7b3524d00442aad7"
+      url "https://github.com/martinsuchenak/phantom/releases/download/v0.0.3/phantom_0.0.3_darwin_arm64.tar.gz"
+      sha256 "fb43624f803d8cfb3f0b8e3f72197edff4b0dbf73da07f498f43705cf10dd67b"
 
       def install
         bin.install "phantom"
@@ -29,15 +29,15 @@ class Phantom < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/martinsuchenak/phantom/releases/download/v0.0.2/phantom_0.0.2_linux_amd64.tar.gz"
-      sha256 "3612335660540ca214a82d90f86fda7d9151ea7ae61df8964a176fed19894555"
+      url "https://github.com/martinsuchenak/phantom/releases/download/v0.0.3/phantom_0.0.3_linux_amd64.tar.gz"
+      sha256 "ee5417311cd73cd01a296709043d1dfe6955296c09139d9b6c1646bf36cea797"
       def install
         bin.install "phantom"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/martinsuchenak/phantom/releases/download/v0.0.2/phantom_0.0.2_linux_arm64.tar.gz"
-      sha256 "95882e340ae897f86e1d88d861295f9d9be410e7004a7c644deaba2e5ba887cc"
+      url "https://github.com/martinsuchenak/phantom/releases/download/v0.0.3/phantom_0.0.3_linux_arm64.tar.gz"
+      sha256 "d7756c079731e8ba37ccf477d8ecfc381526dd0d36729c6fabcf5be482505be4"
       def install
         bin.install "phantom"
       end
