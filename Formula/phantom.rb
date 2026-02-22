@@ -5,23 +5,23 @@
 class Phantom < Formula
   desc "CLI tool for managing overlay filesystems for parallel AI agent development"
   homepage "https://github.com/martinsuchenak/phantom"
-  version "0.0.4"
+  version "0.0.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/martinsuchenak/phantom/releases/download/v0.0.4/phantom_0.0.4_darwin_amd64.tar.gz"
-      sha256 "76379a46d2fded1c854d0c1ff174a1ba2a8edf18c8bf8673a20135512f1eef27"
+      url "https://github.com/martinsuchenak/phantom/releases/download/v0.0.5/phantom_0.0.5_darwin_amd64.tar.gz"
+      sha256 "13c4a01a08c4c62f30b9e861bd9656c9199c78e630ff52aa2a065d80cede3f23"
 
-      def install
+      define_method(:install) do
         bin.install "phantom"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/martinsuchenak/phantom/releases/download/v0.0.4/phantom_0.0.4_darwin_arm64.tar.gz"
-      sha256 "45e9e35c0e96de1d946a84e6bb5337337a67a134f7ef71a5898b7be7e525ef5b"
+      url "https://github.com/martinsuchenak/phantom/releases/download/v0.0.5/phantom_0.0.5_darwin_arm64.tar.gz"
+      sha256 "6edf067c60d506bb51a02b210d7acbfa90401a0408bb53810d2bec1a5ff7ec51"
 
-      def install
+      define_method(:install) do
         bin.install "phantom"
       end
     end
@@ -29,16 +29,16 @@ class Phantom < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/martinsuchenak/phantom/releases/download/v0.0.4/phantom_0.0.4_linux_amd64.tar.gz"
-      sha256 "c9e522d54adfd05cbfa7a02eb74ec9f846490a7f8ef3b372f765581cbde6ed9c"
-      def install
+      url "https://github.com/martinsuchenak/phantom/releases/download/v0.0.5/phantom_0.0.5_linux_amd64.tar.gz"
+      sha256 "0c6cfe86fec12a6b3e3958f288bc14bbd0411dcd37c9c715395c4f4b9ba159ec"
+      define_method(:install) do
         bin.install "phantom"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/martinsuchenak/phantom/releases/download/v0.0.4/phantom_0.0.4_linux_arm64.tar.gz"
-      sha256 "78504c5e4df90e4e85629f63d36e9b1dedd3e130a4799f6d296071fc6a3efdfd"
-      def install
+      url "https://github.com/martinsuchenak/phantom/releases/download/v0.0.5/phantom_0.0.5_linux_arm64.tar.gz"
+      sha256 "9cd2bd4b57d85d954ebca9c224ff4c5efb841860dd792cc3c0ab1899cf4e075d"
+      define_method(:install) do
         bin.install "phantom"
       end
     end
