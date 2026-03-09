@@ -45,6 +45,6 @@ class Rackd < Formula
   end
 
   test do
-    system "#{bin}/rackd", "version"
+    system "#{bin}/rackd", "--version"
   end
 end
