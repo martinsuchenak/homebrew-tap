@@ -3,7 +3,7 @@ cask "go-scaffolder" do
   name "go-scaffolder"
   desc "Scaffold fully functional Go microservice projects"
   homepage "https://github.com/martinsuchenak/go-scaffolder"
-  version "0.0.3"
+  version "0.0.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "go-scaffolder" do
   on_macos do
     on_intel do
       url "https://github.com/martinsuchenak/go-scaffolder/releases/download/v#{version}/go-scaffolder_#{version}_darwin_amd64.tar.gz"
-      sha256 "99f8e1b22e510b81b0275863129e11619f37303b36a9aa7f251305714f39e10b"
+      sha256 "c85c94dbf05992b3eabbdda29293d7092bae71c89ea5b6808a4ae0fa835e9b19"
     end
     on_arm do
       url "https://github.com/martinsuchenak/go-scaffolder/releases/download/v#{version}/go-scaffolder_#{version}_darwin_arm64.tar.gz"
-      sha256 "eef77d90eb66c4af84a4f32f7c879fb85b717e0c9d6cef92cb78122b4d49626f"
+      sha256 "8b9a8aec2b019163c9fa37ae020673bfaedbfc5d95682381e14d64db1fbd0a02"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/martinsuchenak/go-scaffolder/releases/download/v#{version}/go-scaffolder_#{version}_linux_amd64.tar.gz"
-      sha256 "3a774ccf836f0f4144c82a4727bda8cf4c3a113c3918b73c370f10ea86fc678f"
+      sha256 "1f1dc48d56ebce160526a7c65a27a66fb777673cb6549673a643a2f8a238dcc2"
     end
     on_arm do
       url "https://github.com/martinsuchenak/go-scaffolder/releases/download/v#{version}/go-scaffolder_#{version}_linux_arm64.tar.gz"
-      sha256 "475a29e4f35641ef9efefaa845947e2e21ed6f850ebf9be35298675adc5eaf04"
+      sha256 "64f72f5f756025118e9696ba02ff44c5bc03d8c1c2285ed08bbfee84f115589a"
     end
   end
 
