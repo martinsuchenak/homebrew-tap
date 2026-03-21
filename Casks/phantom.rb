@@ -3,7 +3,7 @@ cask "phantom" do
   name "phantom"
   desc "CLI tool for managing overlay filesystems for parallel AI agent development"
   homepage "https://github.com/martinsuchenak/phantom"
-  version "0.0.1"
+  version "0.0.16"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,28 @@ cask "phantom" do
   on_macos do
     on_intel do
       url "https://github.com/martinsuchenak/phantom/releases/download/v#{version}/phantom_#{version}_darwin_amd64.tar.gz"
-      sha256 "b1ccf15aaa06f60c0d8970ec4e5502360cb39c0742a7f0eeb72a2b0b0a3e9876"
+      sha256 "31b0ab5589d5d48ef475183b2115e0b09162126029124e22cae14c9f7a127b69"
     end
     on_arm do
       url "https://github.com/martinsuchenak/phantom/releases/download/v#{version}/phantom_#{version}_darwin_arm64.tar.gz"
-      sha256 "69f2d021b302c042a53934dfb73e55e9050ae4faee0eb9b2b527d16690caa54b"
+      sha256 "f59959b1a41c28142aab23c8ee03f15af3bfcb226af93cc64befa35a46ef1de9"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/martinsuchenak/phantom/releases/download/v#{version}/phantom_#{version}_linux_amd64.tar.gz"
-      sha256 "292db5453fe56a812c83a651715e2cef171758e568efc5ea7932f97fd1c5d199"
+      sha256 "6068fae697de72daa9aa42d21a3d22224cdba026bdea05f1e73d7ab912506e2d"
     end
     on_arm do
       url "https://github.com/martinsuchenak/phantom/releases/download/v#{version}/phantom_#{version}_linux_arm64.tar.gz"
-      sha256 "cbee2c188c2ac1d585e38c4f8e2b7c983f718ed5eb5fd8aedd8584aed07d1614"
+      sha256 "ec14222efceb5a4175b760cbf49418ce6c553c7cd5e3d33b07224c672fcdf250"
+    end
+  end
+
+  postflight do
+    if OS.mac?
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/phantom"]
     end
   end
 
