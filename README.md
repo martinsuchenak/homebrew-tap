@@ -27,3 +27,11 @@ brew install --cask rackd
 ```bash
 brew install --cask phantom
 ```
+
+
+#### GO Scaffolder
+
+[CLI tool for scaffolding of GO apps]([https://github.com/martinsuchenak/rackd](https://github.com/martinsuchenak/go-scaffolder))
+
+```bash
+brew install --cask go-scaffolder
