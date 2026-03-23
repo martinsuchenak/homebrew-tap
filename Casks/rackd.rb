@@ -3,7 +3,7 @@ cask "rackd" do
   name "rackd"
   desc "Device inventory and IPAM management"
   homepage "https://github.com/martinsuchenak/rackd"
-  version "0.0.4"
+  version "0.0.5"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "rackd" do
   on_macos do
     on_intel do
       url "https://github.com/martinsuchenak/rackd/releases/download/v#{version}/rackd_#{version}_darwin_amd64.tar.gz"
-      sha256 "2e2d980a8126c0faba37cc3851de139106e867c9719fc2089a4456b82422d8ed"
+      sha256 "553856633f484e99b2b8b9cdf85c7e491c9525b4f38319827506fe22fb9d885e"
     end
     on_arm do
       url "https://github.com/martinsuchenak/rackd/releases/download/v#{version}/rackd_#{version}_darwin_arm64.tar.gz"
-      sha256 "b9155ceb07ca1dddba835d59bfc257dc2f6f76df1ca1066ee41b3105468890ce"
+      sha256 "bcff77a16ac6fd6ddb3175ccff1291f4fc7b5f4820d6b3b9bf11ec2b971c2807"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/martinsuchenak/rackd/releases/download/v#{version}/rackd_#{version}_linux_amd64.tar.gz"
-      sha256 "b1c7abd710ed2adc6e794bb9a0327ca65ad2d5fd857ad9b068e1aef7bd1729a9"
+      sha256 "e3a93d4857045e0c4d125d72182cd04f271146f60c533df05ccfc3159c734bf4"
     end
     on_arm do
       url "https://github.com/martinsuchenak/rackd/releases/download/v#{version}/rackd_#{version}_linux_arm64.tar.gz"
-      sha256 "b7f0a01ec68ffcb2ff82ab010722a515801777a9c9c1da8921ea7fee643970d4"
+      sha256 "8d29a357a140eaa6ac37d68d987e04bfbf48078182825607a656ae1e7fa99f03"
     end
   end
 
